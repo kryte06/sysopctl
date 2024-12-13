@@ -1,7 +1,7 @@
 # sysopctl Project
 
 ## About
-sysopctl is a custom Linux command-line tool designed to enhance system administration capabilities. 
+*sysopctl* is a custom Linux command-line tool designed to enhance system administration capabilities. 
 It provides a unified interface for managing system services, monitoring processes, analyzing logs, and performing system backups. 
 This tool simplifies common administrative tasks and improves system resource management.
 
@@ -9,7 +9,7 @@ This tool simplifies common administrative tasks and improves system resource ma
 
 **Basic Features:**
 
-*Help Option*
+*Help Option* 
 
 Command: sysopctl --help
 
@@ -63,11 +63,9 @@ Command: sysopctl backup <path>
 
 Description: Backs up files from the specified path to the ~/backup/ directory using rsync.
 
-<<<<<<< HEAD
 ## Usage Instructions
 
 **Prerequisites**
-## Usage Instructions
 
 Linux-based environment (e.g., Ubuntu).
 
