@@ -1,0 +1,67 @@
+#!/bin/bash
+# sysopctl - A custom system management tool
+# Version: v0.1.0
+
+#Help Option:
+if [[ $1 == "--help" ]]; then
+    echo "Usage: sysopctl [OPTIONS]"
+    echo "Options:"
+    echo "  --help      Show this help message"
+    echo "  --version   Show command version"
+    exit 0
+fi
+
+#Version Option:
+if [[ $1 == "--version" ]]; then
+    echo "sysopctl version v0.1.0"
+    exit 0
+fi
+
+#start a service
+if [[ $1 == "service" && $2 == "start" && ! -z $3 ]]; then
+    echo "Starting service: $3"
+    sudo systemctl start "$3"
+    echo "Service $3 started successfully."
+    exit 0
+fi
+
+#stop a service
+if [[ $1 == "service" && $2 == "stop" && ! -z $3 ]]; then
+    echo "Stopping service: $3"
+    sudo systemctl stop "$3"
+    echo "Service $3 stopped successfully."
+    exit 0
+fi
+
+#Disk Usage Statistics
+if [[ $1 == "disk" && $2 == "usage" ]]; then
+    echo "Displaying disk usage statistics..."
+    df -h
+    exit 0
+fi
+
+#Monitoring System Processes
+if [[ $1 == "process" && $2 == "monitor" ]]; then
+    echo "Monitoring system processes (press 'q' to quit)..."
+    top
+    exit 0
+fi
+
+#Analyzing System Logs
+if [[ $1 == "logs" && $2 == "analyze" ]]; then
+    echo "Analyzing system logs..."
+    sudo journalctl -p crit --since "1 hour ago"
+    exit 0
+fi
+
+#Backing Up System Files
+if [[ $1 == "backup" && ! -z $2 ]]; then
+    echo "Backing up files from $2..."
+    rsync -av --progress "$2" ~/backup/
+    echo "Backup completed!"
+    exit 0
+fi
+
+
+
+
