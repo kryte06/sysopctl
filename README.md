@@ -107,3 +107,15 @@ Check version: ./sysopctl --version
 
 Execute features.
 
+
+SCREENSHOTS:
+help and version command : (https://github.com/user-attachments/assets/a8a6b942-94f8-42f7-afff-91fba48dcccc)
+
+Service Management Commands: (https://github.com/user-attachments/assets/ed6a5858-7222-440c-a933-8803cac28c87)
+
+Process Monitoring: (https://github.com/user-attachments/assets/de33e98c-6870-4cae-b1f6-ac80b6ed49bd)
+
+Backup Command: (https://github.com/user-attachments/assets/8b29b5ce-fcbe-473f-aec7-b3095472674d)
+
+
+
