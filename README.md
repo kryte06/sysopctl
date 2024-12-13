@@ -117,5 +117,4 @@ Process Monitoring: (https://github.com/user-attachments/assets/de33e98c-6870-4c
 
 Backup Command: (https://github.com/user-attachments/assets/8b29b5ce-fcbe-473f-aec7-b3095472674d)
 
-
-
+Analysing logs :(https://github.com/user-attachments/assets/e516999f-490b-430f-a53c-5b1bcdc4e332)
